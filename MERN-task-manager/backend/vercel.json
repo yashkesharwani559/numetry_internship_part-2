@@ -1,0 +1,10 @@
+{
+    "version": 2,
+    "builds": [
+      { "src": "middlewares.js/index.js", "use": "@vercel/node" }
+    ],
+    "routes": [
+      { "src": "/(.*)", "dest": "middlewares.js/index.js" }
+    ]
+  }
+  
