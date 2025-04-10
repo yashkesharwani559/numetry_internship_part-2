@@ -1,0 +1,29 @@
+body {
+    background-color: #f3f2ef;
+    font-family: Arial, sans-serif;
+  }
+  
+  .main-layout {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 150px;
+  }
+  .sidebar{
+    width: 20%;
+    max-height: fit-content;
+  }
+  .trending{
+    width: 20%;
+    max-height: fit-content;
+  }
+ .feed{
+  width: 80;
+ }
+  
+  .nav-icons a {
+    margin: 0 10px;
+    color: black;
+    text-decoration: none;
+  }
+  

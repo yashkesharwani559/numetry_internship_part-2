@@ -1,0 +1,93 @@
+/* Navbar Styles */
+.navbar {
+  position: fixed; /* Fixes the navbar at the top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120px; /* Adjust if needed */
+  background: white; /* Change as per theme */
+  z-index: 1000; /* Ensures it stays above other content */
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.main-layout {
+  padding-top: 70px; /* Ensures content starts below the navbar */
+  display: flex;
+  justify-content: space-between;
+}
+/* Logo */
+.navbar__logo {
+  width: 40px;
+  height: auto;
+  margin-left: 80px;
+}
+
+/* Search Bar */
+.navbar__search {
+  display: flex;
+  align-items: center;
+  background-color: #eef3f8;
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin-left: 20px;
+}
+
+.search__icon {
+  color: gray;
+  margin-right: 5px;
+}
+
+.navbar__search input {
+  border: none;
+  background: transparent;
+  outline: none;
+  width: 200px;
+}
+
+/* Center Navigation */
+.navbar-nav .nav-link {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  font-size: 30px;
+  color: gray;
+}
+
+.navbar-nav .nav-link:hover {
+  color: black;
+}
+
+/* Profile & Dropdown */
+.navbar__profile {
+  position: relative;
+  cursor: pointer;
+}
+
+.profile-pic {
+  width: 35px;
+  
+  border-radius: 50%;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background: white;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 10px;
+  min-width: 150px;
+}
+
+.dropdown-item {
+  padding: 8px;
+  text-decoration: none;
+  color: black;
+}
+
+.dropdown-item:hover {
+  background-color: #f3f3f3;
+}
